@@ -6,7 +6,7 @@ const API_KEY = "79e34d877d0e4b168de3864b7507ee50";
 
 const predictBias = async (headline) => {
   try {
-    const response = await axios.post("https://news-bias-backend-2.onrender.com", {
+    const response = await axios.post("https://news-bias-backend-2.onrender.com/predict", {
       text: headline,
     });
     return response.data.prediction;
