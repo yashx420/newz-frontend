@@ -1,0 +1,125 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.news-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 100vh;
+  width: 100vw;
+  padding: 20px;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+/* Search form styling */
+.news-search-form {
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.news-search-form input {
+  padding: 10px;
+  font-size: 16px;
+  width: 300px;
+  margin-right: 10px;
+}
+
+.news-search-form button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.news-search-form button:hover {
+  background-color: #0056b3;
+}
+
+.tabs {
+  margin-bottom: 20px;
+  display: flex;
+  width: 100%;
+  margin-right: 20px;
+  margin-left: 20px;
+  justify-content: space-between;
+}
+
+.tabs button {
+  padding: 10px 20px;
+  margin: 0 5px;
+  font-size: 16px;
+  background-color: #f1f1f1;
+  color: black;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.tabs button.active-tab {
+  background-color: #007bff;
+  color: white;
+}
+
+.tabs button:hover {
+  background-color: #ddd;
+}
+
+/* Center the tab content */
+.tab-content {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.tab-content li {
+  background-color: black;
+  color: white;
+  transition: background-color 0.2s, color 0.2s;
+}
+.tab-content li:hover {
+  background-color: white;
+  color: black;
+}
+
+.news-list {
+  width: 100%; /* Set width for news list */
+  text-align: left;
+}
+
+.news-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.news-list li {
+  margin: 15px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.news-list h3 {
+  margin: 0 0 10px;
+  font-size: 18px;
+}
+
+.news-list p {
+  margin: 0 0 10px;
+}
+
+.news-list a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.news-list a:hover {
+  text-decoration: underline;
+}
