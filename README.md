@@ -1,2 +1,2 @@
 # Newz
-frontend part of my newz categorization system (react, css)
+frontend part of my news categorization system (react, css)
