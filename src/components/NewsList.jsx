@@ -29,12 +29,7 @@ function NewsList() {
     setError(null);
     const encodedQuery = encodeURIComponent(query);
     try {
-     const response = await axios.get("http://localhost:5000/news", {
-      params: {
-        q: query,
-        from: "2025-03-20"
-      }
-    });
+     const response = await axios.get(`https://newsapi.org/v2/everything?q=${encodedQuery}&from=2025-03-20&sortBy=popularity&apiKey=${API_KEY}`);
 
       console.log("NewsAPI response:", response);
       const fetchedArticles = response.data.articles;
